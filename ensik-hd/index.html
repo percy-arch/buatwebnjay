@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ensiklopedia Hardware - Mempelajari Komputer dari Awal</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">Ensiklopedia Hardware</div>
+      <nav>
+        <a href="#home">Beranda</a>
+        <a href="#pengertian">Pengertian</a>
+        <a href="#katalog">Katalog </a>
+        <a
+          href="#"
+          class="btn-login"
+          onclick="document.getElementById('loginModal').style.display='block'"
+          >Login</a
+        >
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="hero">
+        <h1>Selamat Datang di Ensiklopedia Hardware</h1>
+        <p class="motto">
+          Mempelajari komputer dari awal, dimanapun, kapanpun.
+        </p>
+      </section>
+
+      <section id="pengertian" class="content-box">
+        <h2>🧠 Apa Itu Hardware?</h2>
+        <p>
+          Hardware (Perangkat Keras) adalah semua komponen fisik yang membentuk
+          sebuah sistem komputer dan dapat disentuh serta dilihat secara nyata.
+          Hardware adalah fondasi yang memungkinkan perangkat lunak (software)
+          dapat berjalan.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="katalog">
+        <h2>Katalog Hardware Inti</h2>
+
+        <div class="hardware-card">
+          <h3>1. CPU (Central Processing Unit)</h3>
+          <div class="image-placeholder"><img src="img/cpu.jpg" alt="" /></div>
+          <div class="description">
+            <p>
+              CPU adalah "otak" komputer, bertanggung jawab menjalankan semua
+              instruksi dan pemrosesan data. Ini adalah komponen terpenting yang
+              menentukan kecepatan sistem.
+            </p>
+            <div class="difficulty-rating">
+              <p><strong>Tingkat Kesulitan Pemasangan/Pemahaman:</strong></p>
+              <div class="rating-stars">
+                <span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span><span class="star">★</span
+                ><span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hardware-card">
+          <h3>2. RAM (Random Access Memory)</h3>
+          <div class="image-placeholder"><img src="img/ram.jpg" alt="" /></div>
+          <div class="description">
+            <p>
+              RAM adalah memori jangka pendek yang menyimpan data yang sedang
+              aktif agar dapat diakses CPU dengan cepat. Semakin besar RAM,
+              semakin lancar multitasking.
+            </p>
+            <div class="difficulty-rating">
+              <p><strong>Tingkat Kesulitan Pemasangan/Pemahaman:</strong></p>
+              <div class="rating-stars">
+                <span class="star filled">★</span
+                ><span class="star filled">★</span><span class="star">★</span
+                ><span class="star">★</span><span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hardware-card">
+          <h3>3. Motherboard</h3>
+          <div class="image-placeholder">
+            <img src="img/monitor.jpg" alt="" />
+          </div>
+          <div class="description">
+            <p>
+              Motherboard adalah papan sirkuit utama yang menghubungkan dan
+              memungkinkan semua komponen hardware lainnya untuk berkomunikasi.
+            </p>
+            <div class="difficulty-rating">
+              <p><strong>Tingkat Kesulitan Pemasangan/Pemahaman:</strong></p>
+              <div class="rating-stars">
+                <span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span><span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hardware-card">
+          <h3>4. GPU (Graphics Processing Unit)</h3>
+          <div class="image-placeholder"><img src="img/gpu.jpg" alt="" /></div>
+          <div class="description">
+            <p>
+              GPU dirancang untuk mempercepat rendering gambar dan video, sangat
+              penting untuk bermain game dan desain grafis berat.
+            </p>
+            <div class="difficulty-rating">
+              <p><strong>Tingkat Kesulitan Pemasangan/Pemahaman:</strong></p>
+              <div class="rating-stars">
+                <span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span><span class="star">★</span
+                ><span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hardware-card">
+          <h3>5. SSD/HDD (Penyimpanan)</h3>
+          <div class="image-placeholder">
+            <img src="img/ssdhdd.jpg" alt="" />
+          </div>
+          <div class="description">
+            <p>
+              SSD dan HDD adalah memori jangka panjang untuk menyimpan sistem
+              operasi, aplikasi, dan file Anda.
+            </p>
+            <div class="difficulty-rating">
+              <p><strong>Tingkat Kesulitan Pemasangan/Pemahaman:</strong></p>
+              <div class="rating-stars">
+                <span class="star filled">★</span
+                ><span class="star filled">★</span><span class="star">★</span
+                ><span class="star">★</span><span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hardware-card">
+          <h3>6. PSU (Power Supply Unit)</h3>
+          <div class="image-placeholder"><img src="img/psu.jpg" alt="" /></div>
+          <div class="description">
+            <p>
+              PSU mengubah daya AC dari dinding menjadi daya DC bertegangan
+              rendah yang dibutuhkan oleh semua komponen internal komputer.
+            </p>
+            <div class="difficulty-rating">
+              <p><strong>Tingkat Kesulitan Pemasangan/Pemahaman:</strong></p>
+              <div class="rating-stars">
+                <span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span
+                ><span class="star filled">★</span><span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hardware-card">
+          <h3>7. Casing (Chassis)</h3>
+          <div class="image-placeholder">
+            <img src="img/chasing.jpg" alt="" />
+          </div>
+          <div class="description">
+            <p>
+              Casing adalah kerangka eksternal yang melindungi dan menampung
+              semua komponen internal komputer, sekaligus mengatur aliran udara.
+            </p>
+            <div class="difficulty-rating">
+              <p><strong>Tingkat Kesulitan Pemasangan/Pemahaman:</strong></p>
+              <div class="rating-stars">
+                <span class="star filled">★</span><span class="star">★</span
+                ><span class="star">★</span><span class="star">★</span
+                ><span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hardware-card">
+          <h3>8. Monitor (Display)</h3>
+          <div class="image-placeholder">
+            <img src="img/monitor.jpg" alt="" />
+          </div>
+          <div class="description">
+            <p>
+              Monitor adalah perangkat output utama yang menampilkan informasi
+              visual dari komputer kepada pengguna.
+            </p>
+            <div class="difficulty-rating">
+              <p><strong>Tingkat Kesulitan Pemasangan/Pemahaman:</strong></p>
+              <div class="rating-stars">
+                <span class="star filled">★</span><span class="star">★</span
+                ><span class="star">★</span><span class="star">★</span
+                ><span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hardware-card">
+          <h3>9. Keyboard</h3>
+          <div class="image-placeholder">
+            <img src="img/keyboard.jpg" alt="" />
+          </div>
+          <div class="description">
+            <p>
+              Keyboard adalah perangkat input utama untuk memasukkan teks,
+              angka, dan perintah ke dalam komputer.
+            </p>
+            <div class="difficulty-rating">
+              <p><strong>Tingkat Kesulitan Pemasangan/Pemahaman:</strong></p>
+              <div class="rating-stars">
+                <span class="star filled">★</span><span class="star">★</span
+                ><span class="star">★</span><span class="star">★</span
+                ><span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hardware-card">
+          <h3>10. Mouse</h3>
+          <div class="image-placeholder">
+            <img src="img/mouse.jpg" alt="" />
+          </div>
+          <div class="description">
+            <p>
+              Mouse adalah perangkat input untuk mengontrol kursor pada layar,
+              memungkinkan interaksi cepat dengan antarmuka grafis.
+            </p>
+            <div class="difficulty-rating">
+              <p><strong>Tingkat Kesulitan Pemasangan/Pemahaman:</strong></p>
+              <div class="rating-stars">
+                <span class="star filled">★</span><span class="star">★</span
+                ><span class="star">★</span><span class="star">★</span
+                ><span class="star">★</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; 2025 Ensiklopedia Hardware | Moto: Mempelajari komputer dari
+        awal, dimanapun, kapanpun.
+      </p>
+    </footer>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span
+          onclick="document.getElementById('loginModal').style.display='none'"
+          class="close-btn"
+          >&times;</span
+        >
+        <h2>🔐 Login Anggota</h2>
+
+        <form id="loginForm" onsubmit="return handleLogin(event)">
+          <label for="username">Username/Email</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <p
+            id="loginMessage"
+            style="
+              color: #ff4d4d;
+              text-align: center;
+              margin-bottom: 15px;
+              font-weight: bold;
+              display: none;
+            "
+          ></p>
+
+          <button type="submit" class="btn-submit">Masuk</button>
+        </form>
+
+        <p class="signup-link">
+          Belum punya akun? <a href="#">Daftar Sekarang</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      // Tampilkan modal login secara otomatis saat halaman dimuat
+      document.addEventListener("DOMContentLoaded", (event) => {
+        document.getElementById("loginModal").style.display = "block";
+      });
+
+      function handleLogin(event) {
+        // Mencegah form untuk melakukan submit standar
+        event.preventDefault();
+
+        // Ambil nilai dari input
+        const usernameInput = document.getElementById("username").value;
+        const passwordInput = document.getElementById("password").value;
+        const messageElement = document.getElementById("loginMessage");
+
+        // Kredensial yang Benar
+        const correctUsername = "admin";
+        const correctPassword = "admin123";
+
+        // Reset pesan
+        messageElement.style.display = "none";
+        messageElement.textContent = "";
+
+        if (
+          usernameInput === correctUsername &&
+          passwordInput === correctPassword
+        ) {
+          // Login Berhasil: Tutup modal
+          alert("Login Berhasil! Selamat datang, Admin.");
+          document.getElementById("loginModal").style.display = "none";
+        } else {
+          // Login Gagal
+          messageElement.textContent =
+            "Username atau Password salah. Silakan coba lagi.";
+          messageElement.style.display = "block";
+        }
+
+        // Selalu mengembalikan false
+        return false;
+      }
+
+      // Tutup modal ketika pengguna mengklik di luar modal
+      window.onclick = function (event) {
+        const modal = document.getElementById("loginModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>

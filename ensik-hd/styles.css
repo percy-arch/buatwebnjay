@@ -1,0 +1,296 @@
+:root {
+  --bg-dark: #1e1e1e; 
+  --text-light: #f4f4f4; 
+  --accent-forest: #38761d; 
+  --accent-light: #a4c2f4; 
+  --card-bg: #2d2d2d;
+  --navbar-bg: rgba(30, 30, 30, 0.85); 
+  --star-filled: #ffd700; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* Navbar Semi-Transparan */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--navbar-bg);
+  backdrop-filter: blur(5px);
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--accent-forest);
+}
+
+.navbar nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  margin-left: 25px;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 5px;
+}
+
+.navbar nav a:hover {
+  color: var(--accent-forest);
+  background-color: var(--card-bg);
+}
+
+.btn-login {
+  background-color: var(--accent-forest);
+  padding: 8px 15px !important;
+  border-radius: 5px;
+  font-weight: 700;
+  color: var(--text-light) !important;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: #4a902e;
+}
+
+/* Tata Letak Konten */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px 20px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 60px 0;
+  background: linear-gradient(135deg, var(--bg-dark), var(--card-bg));
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+#hero h1 {
+  color: var(--accent-light);
+  margin-bottom: 10px;
+}
+
+#hero .motto {
+  font-size: 1.2em;
+  color: var(--accent-forest);
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid var(--accent-forest);
+  display: inline-block;
+  border-radius: 5px;
+}
+
+/* Pengertian Hardware */
+#pengertian {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+#pengertian h2 {
+  color: var(--accent-light);
+  border-bottom: 2px solid var(--accent-forest);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #333;
+  margin: 40px 0;
+}
+
+/* Katalog Section */
+#katalog h2 {
+  text-align: center;
+  color: var(--accent-forest);
+  margin-bottom: 40px;
+}
+
+.hardware-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.hardware-card h3 {
+  grid-column: 1 / -1;
+  color: var(--accent-light);
+  border-bottom: 2px solid var(--accent-forest);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+/* Tempat Gambar */
+.image-placeholder {
+  height: 200px;
+  background-color: #444;
+  border: 1px dashed var(--accent-forest);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  color: #bbb;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Penjelasan dan Rating */
+.description p {
+  margin-bottom: 15px;
+}
+
+.difficulty-rating {
+  padding-top: 15px;
+  border-top: 1px dashed #444;
+}
+
+.difficulty-rating p {
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.rating-stars .star {
+  font-size: 1.5em;
+  color: #555;
+}
+
+.rating-stars .star.filled {
+  color: var(--star-filled);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #333;
+  color: #888;
+  font-size: 0.9em;
+}
+
+/* --- Login Modal CSS --- */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: var(--card-bg);
+  margin: 5% auto;
+  padding: 30px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content h2 {
+  color: var(--accent-forest);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: var(--text-light);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: var(--accent-light);
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid #555;
+  background: #333;
+  color: var(--text-light);
+  border-radius: 4px;
+}
+
+.btn-submit {
+  background-color: var(--accent-forest);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 1.1em;
+  border-radius: 4px;
+}
+
+.btn-submit:hover {
+  opacity: 1;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
+
+.signup-link a {
+  color: var(--accent-forest);
+  text-decoration: none;
+}
